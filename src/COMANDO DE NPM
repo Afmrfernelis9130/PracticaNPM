@@ -1,0 +1,25 @@
+1. npm -v : muestra la version de npm (tambien se puede usar npm --version)
+2. npm install -g npm@latest :  para ver si tenemos una actualizacion e instalarla
+3. npm init : inicia el proyecto y pide ciertas configuraciones para crear un package.json (puede ser cualquier nombre)
+4. npm init -y : crea un  package.json de manera rápida (con valores por defectos)
+5. npm set init.author.email "email@email.com" : establece un correo por defecto
+6. npm set init.author.name "Leo Messi" : establece un nombre por defecto
+7. npm set init.lincense "MIT" : Establece una licencia por defecto
+8. npm i moment : es el mismo que el comando "npm i momento --save" en donde se instala la dependencia en el entorno local del proyecto (produccion)
+9. npm i moment -D : Este comando se utiliza para instalar una dependencia en un entorno de desarrollo
+10. npm install moment --save-dev : es el mismo comando que el 9 pero mas largo
+11. npm install -g nodemon : se instala el paquete de forma global (window permisos de admin, linux con sudo)
+12. npm list -g --depth 0 : permite ver la lista de los paquetes que se tienen instalados de forma global
+13. npm list : muestra los paquetes que se tienen instalados de manera local (en el proyecto)
+14. npm i eslint -O : instalar un paquete de forma opcional (hay paquetes que requieren paquetes de dentro de si mismos)
+15. npm i  react --dry-run : este comando simula que instala x dependencia solo para mostrar el output que retornaria la instalacion real de esta
+16. npm i webpack -f : este comando instala de forma forzada x dependencia en su ultima version directamente desde los servidores de npm (se debe tener en cuenta que esto puede alterar el package.json por lo que en algunos casos es necesario modificarlo manualmente)
+17. npm install : este comando revisara la dependencias del package.json y las volvera a instalar
+18. npm i json-server@0.15.0 : este comando instala específicamente una determinada version de x paquete
+19. npm outdate :  muestra que paquetes disponen nuevas versiones (tambien se le puede pasar el flag -g para verlos de manera global "npm -g outdate"
+20. npm outdate --dd : muestra un output mas detallado de las dependencias que tienen actualizaciones
+21. npm update : este comando actualiza aquellos paquetes que disponen de nuevas versiones (npm update -g para actualizar de forma global)
+22. npm install json-server@latest : para actualizar un paquete de forma individual
+23. npm uninstall -g nodemon : Este comando se utiliza para desinstalar un paquete de forma global
+24. npm uninstall json-server : esto elimina lo que se instalo dentro de node modules y dentro del package.json
+25. npm uninstall webpack --no-save (desinstala lo que esta dentro de node modules, pero no elimina lo que esta dentro del package.json)
